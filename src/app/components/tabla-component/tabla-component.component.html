@@ -1,1 +1,76 @@
-<p>tabla-component works!</p>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="card shadow-sm">
+                <div class="card-header font-weight-bold text-center" style="background-color: teal;color:white;">
+                    Articulos del Inventario
+                </div>
+
+                <!-- Area de Busqueda -->
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="staticLabel" class="col-sm-1 col-form-label font-weight-bold">Buscar</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="txtBuscar" placeholder="Buscar....">
+                        </div>
+                        <div class="col-sm-4">
+                            <button id="btnBuscar" type="button" class="btn btn-info"><i class="fas fa-search"></i>
+                            </button>
+
+                        </div>
+
+                        <button id="btnDescargar" type="button" class="btn btn-outline-info"> <i
+                                class="fas fa-file-download"></i> Descargar
+                        </button>
+
+
+                    </div>
+                    <hr>
+
+                    <!--Tabla de articulos-->
+                    <table class="table table-hover">
+                        <caption>Articulos Registrados</caption>
+                        <thead class="thead-dark" align="center">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Modelo</th>
+                                <th scope="col">Serie</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Agencia</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td align="center">
+                                    <div class="form-group row">
+                                        <div class="col-sm-5">
+                                            <button type="button" class="btn btn-warning btn-sm"><i
+                                                    class="fas fa-pencil-alt"></i> Editar</button>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <button type="button" class="btn btn-danger btn-sm"><i
+                                                    class="fas fa-trash"></i>
+                                                Eliminar</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
